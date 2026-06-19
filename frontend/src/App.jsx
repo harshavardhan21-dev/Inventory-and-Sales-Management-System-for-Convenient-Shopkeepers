@@ -5,7 +5,6 @@ import Navbar from "./components/Navbar";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Stocks from "./pages/Stocks";
-import Reports from "./pages/Reports";
 import Settings from "./pages/Settings";
 import DailySales from "./pages/DailySales";
 import SalesHistory from "./pages/SalesHistory";
@@ -56,7 +55,6 @@ function App() {
                 <Routes>
                   <Route path="/"              element={<Dashboard />} />
                   <Route path="/stocks"        element={<Stocks />} />
-                  <Route path="/reports"       element={<Reports />} />
                   <Route path="/settings"      element={<Settings />} />
                   <Route path="/sales"         element={<DailySales />} />
                   <Route path="/sales-history" element={<SalesHistory />} />
