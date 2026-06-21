@@ -1,7 +1,6 @@
-# 🛒 Inventory & Sales Management System
-### For Convenient Shopkeepers
+# 🛒 Inventory and Sales Management System For Convenient Shopkeepers
 
-!![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
@@ -163,8 +162,8 @@ Content-Type: application/json
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/inventory-sales-system.git
-cd inventory-sales-system
+git clone https://github.com/harshavardhan21-dev/Inventory-and-Sales-Management-System-for-Convenient-Shopkeepers.git
+cd Inventory-and-Sales-Management-System-for-Convenient-Shopkeepers
 ```
 
 ---
