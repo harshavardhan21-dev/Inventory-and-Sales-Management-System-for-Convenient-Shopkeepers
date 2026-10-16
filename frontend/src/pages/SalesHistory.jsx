@@ -24,7 +24,7 @@ function SalesHistory() {
   const [end, setEnd] = useState("");
 
   const fetchSales = () => {
-    let url = "http://127.0.0.1:5000/sales-history";
+    let url = "https://inventory-and-sales-management-system-j9i6.onrender.com/sales-history";
 
     if (start && end) {
       url += `?start=${start}&end=${end}`;
@@ -41,13 +41,13 @@ function SalesHistory() {
 
   const downloadExcel = () => {
     window.open(
-      `http://127.0.0.1:5000/sales-history/excel?start=${start}&end=${end}`
+      `https://inventory-and-sales-management-system-j9i6.onrender.com/sales-history/excel?start=${start}&end=${end}`
     );
   };
 
   const downloadPDF = () => {
     window.open(
-      `http://127.0.0.1:5000/sales-history/pdf?start=${start}&end=${end}`
+      `https://inventory-and-sales-management-system-j9i6.onrender.com/sales-history/pdf?start=${start}&end=${end}`
     );
   };
 
