@@ -13,7 +13,7 @@ function Stocks() {
   const [sellingPrice, setSellingPrice] = useState("");
 
   const fetchStocks = () => {
-    fetch("http://127.0.0.1:5000/stocks")
+    fetch("https://inventory-and-sales-management-system-j9i6.onrender.com/stocks")
       .then((res) => res.json())
       .then((data) => setStocks(data));
   };
@@ -43,11 +43,11 @@ function Stocks() {
 
   // DOWNLOADS
   const downloadExcel = () => {
-    window.open("http://127.0.0.1:5000/download-excel", "_blank");
+    window.open("https://inventory-and-sales-management-system-j9i6.onrender.com/download-excel", "_blank");
   };
 
   const downloadPDF = () => {
-    window.open("http://127.0.0.1:5000/download-pdf", "_blank");
+    window.open("https://inventory-and-sales-management-system-j9i6.onrender.com/download-pdf", "_blank");
   };
 
   // ADD
@@ -70,7 +70,7 @@ function Stocks() {
 
     setErrorMsg("");
 
-    fetch("http://127.0.0.1:5000/add-stock", {
+    fetch("https://inventory-and-sales-management-system-j9i6.onrender.com/add-stock", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -90,7 +90,7 @@ function Stocks() {
 
   // DELETE
   const handleDeleteStock = async (id) => {
-  const res = await fetch(`http://127.0.0.1:5000/delete-stock/${id}`, {
+  const res = await fetch(`https://inventory-and-sales-management-system-j9i6.onrender.com/delete-stock/${id}`, {
     method: "DELETE"
   });
 
@@ -135,7 +135,7 @@ function Stocks() {
 
     setErrorMsg("");
 
-    fetch(`http://127.0.0.1:5000/update-stock/${id}`, {
+    fetch(`https://inventory-and-sales-management-system-j9i6.onrender.com/update-stock/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
