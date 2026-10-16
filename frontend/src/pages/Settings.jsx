@@ -9,7 +9,7 @@ function Settings() {
   if (!confirmReset) return;
 
   try {
-    const res = await fetch("http://127.0.0.1:5000/reset-all", {
+    const res = await fetch("https://inventory-and-sales-management-system-j9i6.onrender.com/reset-all", {
       method: "DELETE"
     });
 
