@@ -27,14 +27,14 @@ function DailySales() {
 
   // Fetch stocks (for dropdown)
   const fetchStocks = () => {
-    fetch("http://127.0.0.1:5000/stocks")
+    fetch("https://inventory-and-sales-management-system-j9i6.onrender.com/stocks")
       .then(res => res.json())
       .then(data => setStocks(data));
   };
 
   // Fetch today's sales
   const fetchDailySales = () => {
-    fetch("http://127.0.0.1:5000/daily-sales")
+    fetch("https://inventory-and-sales-management-system-j9i6.onrender.com/daily-sales")
       .then(res => res.json())
       .then(data => setSales(data));
   };
@@ -55,7 +55,7 @@ function DailySales() {
 
     setError("");
 
-    fetch("http://127.0.0.1:5000/add-sale", {
+    fetch("https://inventory-and-sales-management-system-j9i6.onrender.com/add-sale", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -111,14 +111,14 @@ function DailySales() {
 
     const downloadDailySalesPDF = () => {
     window.open(
-      "http://127.0.0.1:5000/download-daily-sales-pdf",
+      "https://inventory-and-sales-management-system-j9i6.onrender.com/download-daily-sales-pdf",
       "_blank"
     );
     };
 
     const downloadDailySalesExcel= () => {  
     window.open(
-      "http://127.0.0.1:5000/daily-sales-excel", 
+      "https://inventory-and-sales-management-system-j9i6.onrender.com/daily-sales-excel", 
       "_blank"
     );
     };
