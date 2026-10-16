@@ -16,12 +16,19 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
+
+frontend_url = os.getenv(
+    "FRONTEND_URL",
+    "http://localhost:5173"
+)
+
 CORS(
     app,
     resources={
         r"/*": {
             "origins": [
-                "http://localhost:5173"
+                "http://localhost:5173",
+                frontend_url
             ]
         }
     }
@@ -29,6 +36,7 @@ CORS(
 
 app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URL")
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+
 
 db = SQLAlchemy(app)
 
