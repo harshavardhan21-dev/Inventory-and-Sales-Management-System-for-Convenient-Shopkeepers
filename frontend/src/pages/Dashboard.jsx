@@ -25,7 +25,7 @@ function Dashboard() {
   const [stocks, setStocks] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/stocks")
+    fetch("https://inventory-and-sales-management-system-j9i6.onrender.com/stocks")
       .then(res => res.json())
       .then(data => setStocks(data));
   }, []);
