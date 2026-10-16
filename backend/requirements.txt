@@ -6,3 +6,4 @@ SQLAlchemy
 reportlab
 openpyxl
 python-dotenv
+gunicorn
